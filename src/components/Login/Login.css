@@ -10,7 +10,7 @@ input[type=text], input[type=password] {
   
   /* Set a style for all buttons */
   button {
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -38,7 +38,7 @@ input[type=text], input[type=password] {
   }
   
   img.avatar {
-    width: 40%;
+    width: 20%;
     border-radius: 50%;
   }
   
@@ -52,11 +52,11 @@ input[type=text], input[type=password] {
   }
   
   /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
+  .custom-modal {
+    /* display: none; Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 0;
+    right: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
@@ -71,7 +71,7 @@ input[type=text], input[type=password] {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 40%; /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button (x) */
@@ -115,4 +115,5 @@ input[type=text], input[type=password] {
     .cancelbtn {
        width: 100%;
     }
+
   }
