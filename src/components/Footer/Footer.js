@@ -2,8 +2,8 @@ import React from "react";
 import './Footer.css';
 
 const Footer = () => (
-<footer class="footer">
-        <div class="container footerP">
+<footer className="footer">
+        <div className="container footerP">
         &copy; Copyright 2019
         </div>
     </footer>

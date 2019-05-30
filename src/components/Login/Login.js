@@ -1,38 +1,39 @@
 import React from "react";
 import './Login.css';
 
-const Login = () => {
-  
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+const Login = (props) => (
 
-        <div id="id01" className="modal">
 
-            <form className="modal-content animate" action="/action_page.php">
-                <div className="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" className="close" title="Close Modal">&times;</span>
-                    <img src="img_avatar2.png" alt="Avatar" className="avatar"/>
-                </div>
+    <div id="id01" className="custom-modal">
 
-                    <div className="container">
-                        <label for="uname"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required>
+        <form className="modal-content animate" action="/action_page.php">
+            <div className="imgcontainer">
+                <span onClick={props.Login} className="close" title="Close Modal">&times;</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYX5DpMPK1n5dIoghDAsr_-C2g91cV-IKXgoOxt_ZM2sjUVKx8" alt="Avatar" className="avatar" />
+            </div>
 
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required>
+            <div className="container">
+                <label htmlFor="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required />
 
-                                <button type="submit">Login</button>
-                                <label>
-                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                <label htmlFor="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required />
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" /> Remember me
                                 </label>
-                     </div>
+            </div>
 
-                            <div className="container" style="background-color:#f1f1f1">
-                                <button type="button" onclick="document.getElementById('id01').style.display='none'" className="cancelbtn">Cancel</button>
-                                <span className="psw">Forgot <a href="#">password?</a></span>
-                            </div>
-            </form>
-        </div>
+            <div className="container">
+                <button onClick={props.Login} type="button" className="cancelbtn">Cancel</button>
+                <span className="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
 
-                    }
-                    
+
+)
+// style="background-color:#f1f1f1"
+
 export default Login;
